@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+header{
+  padding: 10px 15%;
+  border: 5px solid black;
+  display: flex;
+  background-color: lightgrey;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+  background-color: lightgray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar{
+  padding: 30px;
+  flex: 8;
+  display: flex;
+  border:2px solid black;
 }
+.movie-search-bar{
+  flex: 5;
+  margin: 30px;
+  height: 40px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.movie-search-button{
+  margin:30px;
+  height: 46px;
+  flex: 1;
+  font-size: large;
+}
+.rating-filter{
+  flex: 2;
+  border: 2px solid black;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.rating-filter-text{
+  font-size: large;
+}
+.rating-stars{
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-list{
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px;
+}
+.movie-card{
+  border: 3px solid red;
+  margin: 20px 30px;
+  width: 280px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.movie-rating{
+  border: 2px solid blue;
+  margin:0px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+.movie-image{
+  border: 2px solid green;
+  flex:7;
+}
+.movie-name{
+  border: 2px solid violet;
+  margin: 0px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+.add-movie-btn{
+  border: 3px solid red;
+  margin: 20px 30px;
+  width: 280px;
+  height: 440px;
+}
+.add-modal{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  border:2px solid blue;
 }
